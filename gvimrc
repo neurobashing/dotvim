@@ -18,3 +18,4 @@ set guioptions-=T
 syntax enable
 colorscheme solarized
 
+autocmd bufwritepost .gvimrc source $MYVIMRC
