@@ -1,8 +1,5 @@
 set guifont=Menlo:h12
 set nocp
-filetype on
-filetype plugin on
-filetype plugin indent on
 set number
 set sw=4
 set softtabstop=4
@@ -17,3 +14,7 @@ set incsearch
 set cursorline
 set visualbell
 set guioptions-=T
+
+syntax enable
+colorscheme solarized
+
