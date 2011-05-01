@@ -5,6 +5,30 @@ filetype on
 filetype plugin on
 filetype plugin indent on
 
+set nocp
+set number
+set sw=4
+set softtabstop=4
+set backspace=start,indent,eol
+set autoindent
+set smartindent
+set smarttab
+set expandtab
+set wrap
+set ls=2
+set incsearch
+set cursorline
+set visualbell
+set hidden 
+set smartcase
+set listchars=tab:▸\ ,eol:¬
+set linebreak
+set showbreak=\ …\ 
+set scrolloff=3
+
+set statusline=%F\ %m\ %r%(\ %h\ %)%y\ line\ %l\ col\ %v\ %p%%\ %L\ lines\ 
+" \ %{fugitive#statusline()}
+ 
 autocmd bufwritepost .vimrc source $MYVIMRC
 
 if has('gui_running')
