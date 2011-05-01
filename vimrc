@@ -26,8 +26,7 @@ set linebreak
 set showbreak=\ …\ 
 set scrolloff=3
 
-set statusline=%F\ %m\ %r%(\ %h\ %)%y\ line\ %l\ col\ %v\ %p%%\ %L\ lines\ 
-" \ %{fugitive#statusline()}
+set statusline=%F\ %m\ %r%(\ %h\ %)%y\ line\ %l\ col\ %v\ %p%%\ %L\ lines\ \ %{fugitive#statusline()}
  
 autocmd bufwritepost .vimrc source $MYVIMRC
 
