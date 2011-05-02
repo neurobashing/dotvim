@@ -11,3 +11,4 @@ on new machine:
 	
 	git submodule init
 	git submodule update
+        sudo gem install github-markup
