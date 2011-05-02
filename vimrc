@@ -38,6 +38,7 @@ endif
 
 set ruler
 set hidden " switch to new buffers w/o having to use !
+syntax enable
 
 " fix PHP things
 au FileType php set omnifunc=phpcomplete#CompletePHP
@@ -58,6 +59,3 @@ map <F4> :TlistToggle<cr>
 
 let g:CommandTMaxHeight=20
 
-" look for modelines
-set modeline
-set modelines=10
