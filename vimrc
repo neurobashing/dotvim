@@ -56,3 +56,8 @@ let Tlist_Show_One_File=1
 let Tlist_Auto_Update=1
 map <F4> :TlistToggle<cr>
 
+let g:CommandTMaxHeight=20
+
+" look for modelines
+set modeline
+set modelines=10
