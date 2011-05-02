@@ -48,3 +48,11 @@ let php_htmlInStrings=1
 
 " syntax check current file
 nmap <Leader>ps :!php -l %<CR>
+
+" tag list
+let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
+let Tlist_WinWidth = 40
+let Tlist_Show_One_File=1
+let Tlist_Auto_Update=1
+map <F4> :TlistToggle<cr>
+
