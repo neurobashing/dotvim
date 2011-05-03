@@ -68,7 +68,19 @@ map <F3> :BufExplorer<CR>
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
 
+" NERDTree configuration
+let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
 map <F2> :NERDTreeToggle<CR>
+
+" Remember last location in file
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+    \| exe "normal g'\"" | endif
+endif
+
+au FileType make set noexpandtab
+au FileType snippet set noexpandtab
+
 
 "let g:CommandTMaxHeight=20
 
@@ -77,3 +89,8 @@ map <F2> :NERDTreeToggle<CR>
 " " screwing up folding when switching between windows.
  "autocmd InsertEnter * if !exists('w:last_fdm') | let w:last_fdm=&foldmethod | setlocal foldmethod=manual | endif
  "autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:last_fdm | unlet w:last_fdm | endif
+ 
+" Command-/ to toggle comments
+map <D-/> <plug>NERDCommenterToggle<CR>
+imap <D-/> <Esc><plug>NERDCommenterToggle<CR>i
+ 
