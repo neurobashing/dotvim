@@ -68,6 +68,8 @@ map <F3> :BufExplorer<CR>
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
 
+map <F2> :NERDTreeToggle<CR>
+
 "let g:CommandTMaxHeight=20
 
 " Don't screw up folds when inserting text that might affect them, until
