@@ -44,7 +44,7 @@ syntax enable
 
 " fix PHP things
 au FileType php set omnifunc=phpcomplete#CompletePHP
-"""""let php_folding=1 " OMG DO NOT EVER ENABLE THIS
+"let php_folding=1 " OMG DO NOT EVER ENABLE THIS
 let php_sql_query=1
 let php_baselib=1
 let php_htmlInStrings=1
@@ -68,7 +68,10 @@ map <F3> :BufExplorer<CR>
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
 
-
-
 "let g:CommandTMaxHeight=20
 
+" Don't screw up folds when inserting text that might affect them, until
+" " leaving insert mode. Foldmethod is local to the window. Protect against
+" " screwing up folding when switching between windows.
+ "autocmd InsertEnter * if !exists('w:last_fdm') | let w:last_fdm=&foldmethod | setlocal foldmethod=manual | endif
+ "autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:last_fdm | unlet w:last_fdm | endif
