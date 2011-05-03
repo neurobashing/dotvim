@@ -25,7 +25,8 @@ set listchars=tab:▸\ ,eol:¬
 set linebreak
 set showbreak=\ …\ 
 set scrolloff=3
-set foldmethod=indent " or marker or syntax
+set foldmethod=marker 
+set showcmd " see commands as you type them
 
 set statusline=%F\ %m\ %r%(\ %h\ %)%y\ line\ %l\ col\ %v\ %p%%\ %L\ lines\ \ %{fugitive#statusline()}
  
@@ -43,7 +44,7 @@ syntax enable
 
 " fix PHP things
 au FileType php set omnifunc=phpcomplete#CompletePHP
-"let php_folding=1 " OMG DO NOT EVER ENABLE THIS
+"""""let php_folding=2 " OMG DO NOT EVER ENABLE THIS
 let php_sql_query=1
 let php_baselib=1
 let php_htmlInStrings=1
