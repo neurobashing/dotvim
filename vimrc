@@ -44,7 +44,7 @@ syntax enable
 
 " fix PHP things
 au FileType php set omnifunc=phpcomplete#CompletePHP
-"""""let php_folding=2 " OMG DO NOT EVER ENABLE THIS
+"""""let php_folding=1 " OMG DO NOT EVER ENABLE THIS
 let php_sql_query=1
 let php_baselib=1
 let php_htmlInStrings=1
@@ -52,12 +52,23 @@ let php_htmlInStrings=1
 " syntax check current file
 nmap <Leader>ps :!php -l %<CR>
 
-" tag list
+" tag list stuff
 let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
 let Tlist_WinWidth = 40
 let Tlist_Show_One_File=1
 let Tlist_Auto_Update=1
 map <F4> :TlistToggle<cr>
 
-let g:CommandTMaxHeight=20
+let g:snips_author="J. Gregg Thomason <gregg@buzzcart.com>"
+
+" :help bufexplorer for more
+map <F3> :BufExplorer<CR>
+
+" retain view state when switching windows
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview
+
+
+
+"let g:CommandTMaxHeight=20
 
