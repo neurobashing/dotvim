@@ -49,6 +49,11 @@ let php_sql_query=1
 let php_baselib=1
 let php_htmlInStrings=1
 
+" replicate cmd-[ and cmd-] (eg from bbedit) 
+" to move visual selection
+vmap <D-[> <gv
+vmap <D-]> >gv
+
 " syntax check current file
 nmap <Leader>ps :!php -l %<CR>
 
