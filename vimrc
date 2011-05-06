@@ -33,9 +33,9 @@ set statusline=%F\ %m\ %r%(\ %h\ %)%y\ line\ %l\ col\ %v\ %p%%\ %L\ lines\ \ %{f
 autocmd bufwritepost .vimrc source $MYVIMRC
 
 if has('gui_running')
-    set background=dark
-else
     set background=light
+else
+    set background=dark
 endif
 
 set ruler
@@ -99,3 +99,5 @@ au FileType snippet set noexpandtab
 map <D-/> <plug>NERDCommenterToggle<CR>
 imap <D-/> <Esc><plug>NERDCommenterToggle<CR>i
  
+" use a different vimwiki path
+let g:vimwiki_list = [{'path': '~/.vim/vimwiki/', 'path_html': '~/Sites/vimwiki/'}]

@@ -2,10 +2,14 @@ set guifont=Menlo:h12
 set guioptions-=T
 
 syntax enable
-"colorscheme solarized
-colorscheme ir_black
+colorscheme solarized
+"colorscheme ir_black
 
 autocmd bufwritepost .gvimrc source $MYVIMRC
+
+" remap ZZ to :w because it closes the last fucking window and that makes me
+" crazy
+nmap ZZ :w<CR>
 
 if has("gui_macvim")
     macmenu &File.New\ Tab key=<nop>
