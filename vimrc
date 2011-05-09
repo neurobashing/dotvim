@@ -31,7 +31,9 @@ set showcmd " see commands as you type them
 set statusline=%F\ %m\ %r%(\ %h\ %)%y\ line\ %l\ col\ %v\ %p%%\ %L\ lines\ \ %{fugitive#statusline()}
 
 " 256 color mode brah
+" requires iTerm2 or some stupid SIMBL hack
 set t_Co=256
+colorscheme zenburn
 
 autocmd bufwritepost .vimrc source $MYVIMRC
 
@@ -104,3 +106,9 @@ imap <D-/> <Esc><plug>NERDCommenterToggle<CR>i
  
 " use a different vimwiki path
 let g:vimwiki_list = [{'path': '~/.vim/vimwiki/', 'path_html': '~/Sites/vimwiki/'}]
+
+" minibufexplore
+let g:miniBufExplMapWindowNavVim = 1 
+let g:miniBufExplMapWindowNavArrows = 1 
+let g:miniBufExplMapCTabSwitchBufs = 1 
+let g:miniBufExplModSelTarget = 1 
