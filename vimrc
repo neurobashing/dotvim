@@ -29,7 +29,10 @@ set foldmethod=marker
 set showcmd " see commands as you type them
 
 set statusline=%F\ %m\ %r%(\ %h\ %)%y\ line\ %l\ col\ %v\ %p%%\ %L\ lines\ \ %{fugitive#statusline()}
- 
+
+" 256 color mode brah
+set t_Co=256
+
 autocmd bufwritepost .vimrc source $MYVIMRC
 
 if has('gui_running')
