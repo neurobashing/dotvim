@@ -2,7 +2,8 @@ set guifont=Menlo:h12
 set guioptions-=T
 
 syntax enable
-colorscheme solarized
+colorscheme zenburn
+"colorscheme solarized
 "colorscheme ir_black
 
 autocmd bufwritepost .gvimrc source $MYVIMRC
