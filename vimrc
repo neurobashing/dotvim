@@ -107,8 +107,5 @@ imap <D-/> <Esc><plug>NERDCommenterToggle<CR>i
 " use a different vimwiki path
 let g:vimwiki_list = [{'path': '~/.vim/vimwiki/', 'path_html': '~/Sites/vimwiki/'}]
 
-" minibufexplore
-let g:miniBufExplMapWindowNavVim = 1 
-let g:miniBufExplMapWindowNavArrows = 1 
-let g:miniBufExplMapCTabSwitchBufs = 1 
-let g:miniBufExplModSelTarget = 1 
+" in theory this will fix fugitive problems
+set shell=/bin/bash

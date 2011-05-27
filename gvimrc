@@ -2,7 +2,8 @@ set guifont=Menlo:h12
 set guioptions-=T
 
 syntax enable
-colorscheme zenburn
+colorscheme macvim
+"colorscheme zenburn
 "colorscheme solarized
 "colorscheme ir_black
 
