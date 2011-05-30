@@ -15,7 +15,7 @@ on new machine:
 
 Adding a submodule \(pathogen\):
 
-	git submodule add GIT\_URL bundle/PLUGIN\_NAME
+	git submodule add GIT_URL bundle/PLUGIN_NAME
 	git add .
 	git commit -m "added some plugin blah blah blah"
 
@@ -23,4 +23,4 @@ Removing a submodule \(pathogen\):
 
 	Remove the entry in .gitmodules
 	Remove the entry in .git/config
-	git rm --cached bundle/PLUGIN\_NAME
+	git rm --cached bundle/PLUGIN_NAME
