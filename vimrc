@@ -89,7 +89,7 @@ if has("autocmd")
 endif
 
 au FileType make set noexpandtab
-au FileType snippet set noexpandtab
+au FileType snippet setlocal ts=8 sts=8 sw=8 noet
 
 
 "let g:CommandTMaxHeight=20
