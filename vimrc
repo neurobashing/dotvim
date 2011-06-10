@@ -109,3 +109,11 @@ let g:vimwiki_list = [{'path': '~/.vim/vimwiki/', 'path_html': '~/Sites/vimwiki/
 
 " in theory this will fix fugitive problems
 set shell=/bin/bash
+
+" macro to change config strings in php
+let @l='w2xi->~w4xi->ww2x'
+" macro to change config strings in smarty templates
+let @s='wcw->ESCl~wcw->ESC'
+" macro to change sql_tbl stuff to buzzcart_
+let @d="/$sql^M3cwbuzzcart_ESCwx"
+
