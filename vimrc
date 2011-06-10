@@ -20,13 +20,30 @@ set incsearch
 set cursorline
 set visualbell
 set hidden 
-set smartcase
 set listchars=tab:▸\ ,eol:¬
 set linebreak
 set showbreak=\ …\ 
 set scrolloff=3
 set foldmethod=marker 
 set showcmd " see commands as you type them
+
+" here's some new stuff I'm trying out
+let mapleader = ","
+set ignorecase
+set smartcase
+" these two make searches case-insensitive UNLESS you search for a mixed case
+" word
+set gdefault " substitute globally by default, append g to invert
+" show matches, highlight results in real time
+set showmatch
+set hlsearch
+" leader-space clears highlighting.
+nnoremap <leader><space> :noh<cr>
+" searches by default use extra-magic (or "normal") regular expressions
+nnoremap / /\v
+vnoremap / /\v
+
+
 
 set statusline=%F\ %m\ %r%(\ %h\ %)%y\ line\ %l\ col\ %v\ %p%%\ %L\ lines\ \ %{fugitive#statusline()}
 
