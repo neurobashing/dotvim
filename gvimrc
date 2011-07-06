@@ -1,9 +1,10 @@
-set guifont=Menlo:h12
+set guifont=Inconsolata:h14
+"set guifont=Menlo:h12
 set guioptions-=T
 
 syntax enable
-colorscheme macvim
-"colorscheme zenburn
+"colorscheme macvim
+colorscheme zenburn
 "colorscheme solarized
 "colorscheme ir_black
 
@@ -11,18 +12,16 @@ autocmd bufwritepost .gvimrc source $MYVIMRC
 
 " remap ZZ to :w because it closes the last fucking window and that makes me
 " crazy
-nmap ZZ :w<CR>
+"nmap ZZ :w<CR>
 
 if has("gui_macvim")
     macmenu &File.New\ Tab key=<nop>
     map <D-t> :CommandT<CR>
     set fuoptions=maxhorz,maxvert
     " Command-Return for fullscreen
-      macmenu Window.Toggle\ Full\ Screen\ Mode key=<D-CR>
-
+    macmenu Window.Toggle\ Full\ Screen\ Mode key=<D-CR>
     " Command-Shift-F for Ack
-      map <D-F> :Ack<space>
-    
+    map <D-F> :Ack<space>
 endif
 
 " Project Tree
