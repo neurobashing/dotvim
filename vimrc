@@ -79,17 +79,7 @@ vmap <D-]> >gv
 " syntax check current file
 nmap <Leader>ps :!php -l %<CR>
 
-" tag list stuff
-let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
-let Tlist_WinWidth = 40
-let Tlist_Show_One_File=1
-let Tlist_Auto_Update=1
-map <F4> :TlistToggle<cr>
-
 let g:snips_author="J. Gregg Thomason <gregg@buzzcart.com>"
-
-" :help bufexplorer for more
-map <F3> :BufExplorer<CR>
 
 " retain view state when switching windows
 autocmd BufWinLeave *.* mkview
@@ -108,15 +98,8 @@ endif
 au FileType make set noexpandtab
 au FileType snippet setlocal ts=8 sts=8 sw=8 noet
 
-
 "let g:CommandTMaxHeight=20
 
-" Don't screw up folds when inserting text that might affect them, until
-" " leaving insert mode. Foldmethod is local to the window. Protect against
-" " screwing up folding when switching between windows.
- "autocmd InsertEnter * if !exists('w:last_fdm') | let w:last_fdm=&foldmethod | setlocal foldmethod=manual | endif
- "autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:last_fdm | unlet w:last_fdm | endif
- 
 " Command-/ to toggle comments
 map <D-/> <plug>NERDCommenterToggle<CR>
 imap <D-/> <Esc><plug>NERDCommenterToggle<CR>i
