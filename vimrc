@@ -43,8 +43,6 @@ nnoremap <leader><space> :noh<cr>
 nnoremap / /\v
 vnoremap / /\v
 
-
-
 set statusline=%F\ %m\ %r%(\ %h\ %)%y\ line\ %l\ col\ %v\ %p%%\ %L\ lines\ \ %{fugitive#statusline()}
 
 " 256 color mode brah
@@ -85,9 +83,10 @@ let g:snips_author="J. Gregg Thomason <gregg@buzzcart.com>"
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
 
-" NERDTree configuration
+"" NERDTree configuration
 let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
-map <F2> :NERDTreeToggle<CR>
+"map <F2> :NERDTreeToggle<CR>
+map <Leader>nt :NERDTreeToggle<CR>
 
 " Remember last location in file
 if has("autocmd")
@@ -97,8 +96,6 @@ endif
 
 au FileType make set noexpandtab
 au FileType snippet setlocal ts=8 sts=8 sw=8 noet
-
-"let g:CommandTMaxHeight=20
 
 " Command-/ to toggle comments
 map <D-/> <plug>NERDCommenterToggle<CR>
