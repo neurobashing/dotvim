@@ -49,3 +49,6 @@
 [submodule "bundle/SudoEdit"]
 	path = bundle/SudoEdit
 	url = https://github.com/chrisbra/SudoEdit.vim.git
+[submodule "bundle/snipmate.vim"]
+	path = bundle/snipmate.vim
+	url = https://github.com/msanders/snipmate.vim
