@@ -114,3 +114,4 @@ let @s='wcw->ESCl~wcw->ESC'
 " macro to change sql_tbl stuff to buzzcart_
 let @d="/$sql^M3cwbuzzcart_ESCwx"
 
+let g:tagbar_ctags_bin="/usr/local/bin/ctags"

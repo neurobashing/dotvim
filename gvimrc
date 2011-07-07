@@ -21,5 +21,6 @@ if has("gui_macvim")
     map <D-F> :Ack<space>
     macmenu &Tools.Make key=<nop>
     map <D-b> :CommandTBuffer<CR>
+    map <Leader>tb :TagbarToggle<CR>
 endif
 
