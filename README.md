@@ -24,3 +24,7 @@ Removing a submodule \(pathogen\):
 	Remove the entry in .gitmodules
 	Remove the entry in .git/config
 	git rm --cached bundle/PLUGIN_NAME
+
+Updating pathogen modules:
+
+        git submodule foreach git pull origin master
