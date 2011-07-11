@@ -1,0 +1,41 @@
+Keybindings and macros and things
+
+Ack
+===
+cmd-shift-f Ack
+
+Twitter
+=======
+:FriendsTwitter
+:{count}FriendsTwitter show twitter, for optionally, page {count} of feed.
+,g open URL at cursor
+
+TaskList
+========
+map <leader>v <Plug>TaskList
+,lt show TODO/FIXMEs in buffer for current buffer
+
+NERDTree
+========
+,nt open/close NERDTree
+
+TagBar
+======
+,tb toggle tagbar
+
+Command-T
+=========
+cmd-t HURR DURR
+cmd-b show buffers
+,b show buffers
+
+NERDCommenter
+=============
+cmd-/ comment line
+,cs comment region (c-style)
+,cc comment region (c++ style)
+
+MISC
+====
+,ps exec php -l on current file
+

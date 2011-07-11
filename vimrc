@@ -120,3 +120,6 @@ let twitvim_enable_python = 1
 let twitvim_browser_cmd = 'open '
 let twitvim_api_root = "https://api.twitter.com/1"
 let twitvim_count = 50
+
+" show tasklist for current file
+map <leader>lt <Plug>TaskList
