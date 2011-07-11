@@ -24,3 +24,7 @@ if has("gui_macvim")
     map <Leader>tb :TagbarToggle<CR>
 endif
 
+" let's fiddle with the toolbar.
+aunmenu ToolBar.Make
+tmenu ToolBar.TagBar Toggle Tagbar
+amenu ToolBar.TagBar :TagbarToggle<CR>
