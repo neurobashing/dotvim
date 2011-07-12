@@ -25,6 +25,13 @@ if has("gui_macvim")
 endif
 
 " let's fiddle with the toolbar.
+
+" remove the Make button, because we don't Make.
 aunmenu ToolBar.Make
+
+" Add a button for toggling Tagbar
 tmenu ToolBar.TagBar Toggle Tagbar
 amenu ToolBar.TagBar :TagbarToggle<CR>
+
+tmenu ToolBar.VimWiki Open wiki Index
+amenu ToolBar.VimWiki :VimwikiIndex<CR>

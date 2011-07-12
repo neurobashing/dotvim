@@ -12,7 +12,6 @@ Twitter
 
 TaskList
 ========
-map <leader>v <Plug>TaskList
 ,lt show TODO/FIXMEs in buffer for current buffer
 
 NERDTree
@@ -24,6 +23,7 @@ TagBar
 ,tb toggle tagbar
 
 Command-T
+(FIXME: Disable extra stuff?)
 =========
 cmd-t HURR DURR
 cmd-b show buffers
@@ -35,7 +35,10 @@ cmd-/ comment line
 ,cs comment region (c-style)
 ,cc comment region (c++ style)
 
+VimWiki
+,ww open vimwiki index.
+
 MISC
 ====
 ,ps exec php -l on current file
-
+,SPACE clear search highlighting
