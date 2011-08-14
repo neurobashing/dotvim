@@ -1,5 +1,5 @@
-set guifont=Inconsolata:h14
-"set guifont=Menlo:h12
+"set guifont=Inconsolata:h14
+set guifont=Menlo:h14
 "set guioptions-=T
 
 syntax enable
@@ -35,3 +35,13 @@ amenu ToolBar.TagBar :TagbarToggle<CR>
 
 tmenu ToolBar.VimWiki Open wiki Index
 amenu ToolBar.VimWiki :VimwikiIndex<CR>
+
+" Show syntax highlighting groups for word under cursor
+nmap <C-S-P> :call <SID>SynStack()<CR>
+function! <SID>SynStack()
+  if !exists("*synstack")
+    return
+  endif
+  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
+

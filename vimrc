@@ -123,3 +123,4 @@ let twitvim_count = 50
 
 " show tasklist for current file
 map <leader>lt <Plug>TaskList
+command! W w|bwipeout
