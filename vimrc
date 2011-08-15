@@ -19,12 +19,12 @@ set ls=2
 set incsearch
 set cursorline
 set visualbell
-set hidden 
+set hidden
 set listchars=tab:▸\ ,eol:¬
 set linebreak
-set showbreak=\ …\ 
+set showbreak=\ …\
 set scrolloff=3
-set foldmethod=marker 
+set foldmethod=marker
 set showcmd " see commands as you type them
 
 " here's some new stuff I'm trying out
@@ -69,7 +69,7 @@ let php_sql_query=1
 let php_baselib=1
 let php_htmlInStrings=1
 
-" replicate cmd-[ and cmd-] (eg from bbedit) 
+" replicate cmd-[ and cmd-] (eg from bbedit)
 " to move visual selection
 vmap <D-[> <gv
 vmap <D-]> >gv
@@ -100,7 +100,7 @@ au FileType snippet setlocal ts=8 sts=8 sw=8 noet
 " Command-/ to toggle comments
 map <D-/> <plug>NERDCommenterToggle<CR>
 imap <D-/> <Esc><plug>NERDCommenterToggle<CR>i
- 
+
 " use a different vimwiki path
 " you can use more path/path_html {} pairs.
 let g:vimwiki_list = [{'path': '~/.vim/vimwiki/', 'path_html': '~/Sites/vimwiki/'}]
