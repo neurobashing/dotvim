@@ -102,17 +102,11 @@ map <D-/> <plug>NERDCommenterToggle<CR>
 imap <D-/> <Esc><plug>NERDCommenterToggle<CR>i
  
 " use a different vimwiki path
+" you can use more path/path_html {} pairs.
 let g:vimwiki_list = [{'path': '~/.vim/vimwiki/', 'path_html': '~/Sites/vimwiki/'}]
 
 " in theory this will fix fugitive problems
 set shell=/bin/bash
-
-" macro to change config strings in php
-let @l='w2xi->~w4xi->ww2x'
-" macro to change config strings in smarty templates
-let @s='wcw->ESCl~wcw->ESC'
-" macro to change sql_tbl stuff to buzzcart_
-let @d="/$sql^M3cwbuzzcart_ESCwx"
 
 let g:tagbar_ctags_bin="/usr/local/bin/ctags"
 
@@ -123,3 +117,6 @@ let twitvim_count = 50
 
 " show tasklist for current file
 map <leader>lt <Plug>TaskList
+
+command W w
+command Wb w|bw
