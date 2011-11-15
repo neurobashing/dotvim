@@ -120,3 +120,6 @@ map <leader>lt <Plug>TaskList
 
 command W w
 command Wb w|bw
+
+" Python things
+autocmd BufNewFile,BufRead *.py setlocal tabstop=2
