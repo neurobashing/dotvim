@@ -110,11 +110,6 @@ set shell=/bin/bash
 
 let g:tagbar_ctags_bin="/usr/local/bin/ctags"
 
-let twitvim_enable_python = 1
-let twitvim_browser_cmd = 'open '
-let twitvim_api_root = "https://api.twitter.com/1"
-let twitvim_count = 50
-
 " show tasklist for current file
 map <leader>lt <Plug>TaskList
 
@@ -123,3 +118,5 @@ command Wb w|bw
 
 " Python things
 autocmd BufNewFile,BufRead *.py setlocal tabstop=2
+nnoremap <leader>M :silent !open -a Marked.app '%:p'<cr>
+
