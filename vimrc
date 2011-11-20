@@ -118,5 +118,18 @@ command Wb w|bw
 
 " Python things
 autocmd BufNewFile,BufRead *.py setlocal tabstop=2
+
+" markdown yo
 nnoremap <leader>M :silent !open -a Marked.app '%:p'<cr>
 
+" once again crazy things
+set wildmenu
+set wildmode=longest,full
+set wildignore+=.hg,.git,.svn                    " Version control
+set wildignore+=*.jpg,*.bmp,*.gif,*.png,*.jpeg   " binary images
+set wildignore+=*.sw?                            " Vim swap files
+set wildignore+=*.DS_Store                       " OSX bullshit
+set wildignore+=*.pyc                            " Python byte code
+
+" Highlight VCS conflict markers
+match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'

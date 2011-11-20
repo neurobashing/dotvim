@@ -25,7 +25,6 @@ if has("gui_macvim")
 endif
 
 " let's fiddle with the toolbar.
-
 " remove the Make button, because we don't Make.
 aunmenu ToolBar.Make
 
