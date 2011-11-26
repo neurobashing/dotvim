@@ -14,6 +14,6 @@ pathpart = path.basename(giturl.path)
 # remove .git if it exists. this is our module name
 modulename = pathpart.replace('.git','')
 
-subprocess.call(["git","submodule","add",modurl, "bundle/"+modulename])
-subprocess.call(["git","add" "."])
-subprocess.call(["git","commit" "-m" "added module "+modulename])
+subprocess.call(["git","submodule","add",modurl,"bundle/"+modulename])
+subprocess.call(["git","add","."])
+subprocess.call(["git","commit","-m","added module "+modulename])
