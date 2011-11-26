@@ -2,8 +2,4 @@
 .netrwhist
 view/*
 .VimballRecord
-bundle/snipmate-snippets
-bundle/Conque-Shell
-bundle/SudoEdit
-bundle/vim-git
-bundle/vimwiki
+bundle/*
