@@ -3,3 +3,7 @@
 view/*
 bundle/snipmate-snippets
 .VimballRecord
+bundle/Conque-Shell
+bundle/SudoEdit
+bundle/vim-git
+bundle/vimwiki
