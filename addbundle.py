@@ -16,4 +16,5 @@ modulename = pathpart.replace('.git','')
 
 subprocess.call(["git","submodule","add",modurl,"bundle/"+modulename])
 subprocess.call(["git","add","."])
+subprocess.call(["git","config","submodule."+"bundle/"+modulename+".ignore","dirty"])
 subprocess.call(["git","commit","-m","added module "+modulename])
