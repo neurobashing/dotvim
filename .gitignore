@@ -1,8 +1,8 @@
 .*.swp
 .netrwhist
 view/*
-bundle/snipmate-snippets
 .VimballRecord
+bundle/snipmate-snippets
 bundle/Conque-Shell
 bundle/SudoEdit
 bundle/vim-git
