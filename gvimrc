@@ -11,8 +11,8 @@ colorscheme zenburn
 autocmd bufwritepost .gvimrc source $MYVIMRC
 
 if has("gui_macvim")
-    macmenu &File.New\ Tab key=<nop>
-    map <D-t> :CommandT<CR>
+    "macmenu &File.New\ Tab key=<nop>
+    "map <D-t> :CommandT<CR>
     let g:CommandTMaxHeight=20
     set fuoptions=maxhorz,maxvert
     " Command-Return for fullscreen
