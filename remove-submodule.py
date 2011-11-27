@@ -1,14 +1,9 @@
 #!/usr/bin/python
 
-# remove entry from .gitmodules
-# remove entry from .git/config
-# then run git rm --cached path/to/submodule
-# add and commit.
 import sys,subprocess
-from os import path
 
 if len(sys.argv) < 2:
-  exit('Please enter a module name, eg what is under bundles.')
+  exit('Please enter a module name, ie what is under bundles.')
 else:
   modulename = sys.argv[1]
 
