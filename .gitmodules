@@ -50,10 +50,6 @@
 	path = bundle/TaskList
 	url = https://github.com/vim-scripts/TaskList.vim.git
         ignore = dirty
-[submodule "bundle/command-t"]
-	path = bundle/command-t
-	url = git://git.wincent.com/command-t.git
-        ignore = dirty
 [submodule "bundle/SudoEdit"]
 	path = bundle/SudoEdit
 	url = https://github.com/chrisbra/SudoEdit.vim.git
