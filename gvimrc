@@ -4,7 +4,8 @@ set guifont=Menlo:h14
 
 syntax enable
 "colorscheme macvim
-colorscheme zenburn
+"colorscheme zenburn
+colorscheme xoria256
 "colorscheme solarized
 "colorscheme ir_black
 

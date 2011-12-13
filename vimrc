@@ -116,14 +116,12 @@ map <leader>lt <Plug>TaskList
 command W w
 command Wb w|bw
 
-" Python things
-autocmd BufNewFile,BufRead *.py setlocal ts=2 sw=2
+autocmd BufNewFile,BufRead *.py setlocal textwidth=79
 au FileType python setlocal omnifunc=pythoncomplete#Complete
 
 " markdown yo
 nnoremap <leader>M :silent !open -a Marked.app '%:p'<cr>
 
-" once again crazy things
 set wildmenu
 set wildmode=longest,full
 set wildignore+=.hg,.git,.svn                    " Version control
