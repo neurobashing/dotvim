@@ -82,3 +82,6 @@
 	path = bundle/vim-session
 	url = https://github.com/xolox/vim-session.git
         ignore = dirty
+[submodule "bundle/TwitVim"]
+	path = bundle/TwitVim
+	url = https://github.com/vim-scripts/TwitVim.git
