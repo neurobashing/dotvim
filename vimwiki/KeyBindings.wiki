@@ -22,13 +22,6 @@ TagBar
 ======
 ,tb toggle tagbar
 
-Command-T
-(FIXME: Disable extra stuff?)
-=========
-cmd-t HURR DURR
-cmd-b show buffers
-,b show buffers
-
 NERDCommenter
 =============
 cmd-/ comment line
@@ -40,5 +33,4 @@ VimWiki
 
 MISC
 ====
-,ps exec php -l on current file
 ,SPACE clear search highlighting

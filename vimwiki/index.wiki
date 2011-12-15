@@ -2,5 +2,5 @@
 
     * KeyBindings -- I forget these.
     * HOWTO -- Reminders.
-    * scraped from dokuwiki
 
+    * site repo:  svn co svn+ssh://cvs/usr/local/svndev/website
