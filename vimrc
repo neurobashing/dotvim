@@ -24,7 +24,7 @@ set listchars=tab:▸\ ,eol:¬
 set linebreak
 set showbreak=\ …\
 set scrolloff=3
-set foldmethod=marker
+set foldmethod=indent
 set showcmd " see commands as you type them
 
 " here's some new stuff I'm trying out
@@ -77,7 +77,7 @@ vmap <D-]> >gv
 " syntax check current file
 nmap <Leader>ps :!php -l %<CR>
 
-let g:snips_author="J. Gregg Thomason <gregg@buzzcart.com>"
+let g:snips_author="J. Gregg Thomason <gregg.thomason@asti-usa.com>"
 
 " retain view state when switching windows
 autocmd BufWinLeave *.* mkview
@@ -133,4 +133,28 @@ set wildignore+=*.pyc                            " Python byte code
 " Highlight VCS conflict markers
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 
+let twitvim_browser_command="open"
+nnoremap <F8> :FriendsTwitter<cr>
+nnoremap <S-F8> :UserTwitter<cr>
+nnoremap <A-F8> :RepliesTwitter<cr>
+nnoremap <C-F8> :DMTwitter<cr>
+let twitvim_filter_enable = 1
+" remove getglue links
+let twitvim_filter_regex = '@GetGlue'
+let twitvim_count = 50
 
+
+" in theory, this will delete all empty buffers
+function! DeleteEmptyBuffers()
+    let empty = []
+    let [i, nbuf] = [1, bufnr('$')]
+    while i <= nbuf
+        if bufexists(i) && bufname(i) == ''
+            let empty += [i]
+        endif
+        let i += 1
+    endwhile
+    if len(empty) > 0
+        execute 'bdelete ' . join(empty, ' ')
+    endif
+endfunction
