@@ -135,6 +135,7 @@ match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 
 let twitvim_browser_cmd="open"
 nnoremap <F8> :FriendsTwitter<cr>
+nnoremap <F5> :RefreshTwitter<cr>
 nnoremap <S-F8> :UserTwitter<cr>
 nnoremap <A-F8> :RepliesTwitter<cr>
 nnoremap <C-F8> :DMTwitter<cr>
@@ -157,3 +158,5 @@ function! DeleteEmptyBuffers()
         execute 'bdelete ' . join(empty, ' ')
     endif
 endfunction
+
+let g:session_autoload = 'no'
