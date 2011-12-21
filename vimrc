@@ -135,4 +135,3 @@ set wildignore+=*.pyc                            " Python byte code
 " Highlight VCS conflict markers
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 
-
