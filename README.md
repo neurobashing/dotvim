@@ -9,9 +9,12 @@ Create symlinks:
 
 on new machine:
 	
+        ** make sure you don't clone the snipmates repo first. **
 	git submodule init
 	git submodule update
 	sudo gem install github-markup
+        cd .vim/bundle/
+        git clone git@github.com:neurobashing/snipmate-snippets.git snipmate-snippets
 
 Adding a submodule \(pathogen\):
 

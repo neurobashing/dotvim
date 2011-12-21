@@ -2,3 +2,5 @@
 .netrwhist
 view/*
 .VimballRecord
+bundle/snipmate-snippets
+sessions/
