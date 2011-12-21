@@ -133,7 +133,7 @@ set wildignore+=*.pyc                            " Python byte code
 " Highlight VCS conflict markers
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 
-let twitvim_browser_command="open"
+let twitvim_browser_cmd="open"
 nnoremap <F8> :FriendsTwitter<cr>
 nnoremap <S-F8> :UserTwitter<cr>
 nnoremap <A-F8> :RepliesTwitter<cr>
