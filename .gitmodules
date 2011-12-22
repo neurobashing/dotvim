@@ -93,3 +93,4 @@
 [submodule "bundle/Jinja"]
 	path = bundle/Jinja
 	url = https://github.com/vim-scripts/Jinja.git
+	ignore = dirty
