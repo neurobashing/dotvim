@@ -97,3 +97,4 @@
 [submodule "bundle/pyflakes"]
 	path = bundle/pyflakes
 	url = https://github.com/vim-scripts/pyflakes.git
+	ignore = dirty
