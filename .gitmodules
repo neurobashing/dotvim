@@ -94,3 +94,6 @@
 	path = bundle/Jinja
 	url = https://github.com/vim-scripts/Jinja.git
 	ignore = dirty
+[submodule "bundle/pyflakes"]
+	path = bundle/pyflakes
+	url = https://github.com/vim-scripts/pyflakes.git
