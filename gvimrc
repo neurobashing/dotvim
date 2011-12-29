@@ -13,9 +13,9 @@ autocmd bufwritepost .gvimrc source $MYVIMRC
 
 if has("gui_macvim")
     macmenu &File.New\ Tab key=<nop>
-    map <D-t> :tabe 
+    map <D-t> :PeepOpen<CR>
     macmenu &File.Open\ Tab\.\.\. key=<nop>
-    map <D-T> :PeepOpen<CR>
+    map <D-T> :tabe 
     set fuoptions=maxhorz,maxvert
     " Command-Return for fullscreen
     macmenu Window.Toggle\ Full\ Screen\ Mode key=<D-CR>

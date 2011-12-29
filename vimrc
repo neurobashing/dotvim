@@ -19,7 +19,6 @@ set ls=2
 set incsearch
 set cursorline
 set visualbell
-set hidden
 set listchars=tab:▸\ ,eol:¬
 set linebreak
 set showbreak=\ …\
