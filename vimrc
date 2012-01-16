@@ -164,6 +164,7 @@ inoremap <c-a> <esc>I
 inoremap <c-e> <esc>A
 
 hi IndentGuides guibg=#5f5f5f
+hi IndentGuides guifg=#5f5f5f
 let g:indentguides_state = 0
 function! IndentGuides() " {{{
     if g:indentguides_state
