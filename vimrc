@@ -47,15 +47,10 @@ set statusline=%F\ %m\ %r%(\ %h\ %)%y\ line\ %l\ col\ %v\ %p%%\ %L\ lines\ \ %{f
 " 256 color mode brah
 " requires iTerm2 or some stupid SIMBL hack
 set t_Co=256
-colorscheme zenburn
+set background=dark
+colorscheme molokai
 
 autocmd bufwritepost .vimrc source $MYVIMRC
-
-if has('gui_running')
-    set background=light
-else
-    set background=dark
-endif
 
 set ruler
 set hidden " switch to new buffers w/o having to use !
@@ -159,3 +154,24 @@ function! DeleteEmptyBuffers()
 endfunction
 
 let g:session_autoload = 'no'
+
+" Keep search matches in the middle of the window and pulse the line when moving
+" to them.
+nnoremap n nzzzv
+nnoremap N Nzzzv
+" Heresy, use emacs bindings in insert mode
+inoremap <c-a> <esc>I
+inoremap <c-e> <esc>A
+
+hi IndentGuides guibg=#5f5f5f
+let g:indentguides_state = 0
+function! IndentGuides() " {{{
+    if g:indentguides_state
+        let g:indentguides_state = 0
+        2match None
+    else
+        let g:indentguides_state = 1
+        execute '2match IndentGuides /\%(\_^\s*\)\@<=\%(\%'.(0*&sw+1).'v\|\%'.(1*&sw+1).'v\|\%'.(2*&sw+1).'v\|\%'.(3*&sw+1).'v\|\%'.(4*&sw+1).'v\|\%'.(5*&sw+1).'v\|\%'.(6*&sw+1).'v\|\%'.(7*&sw+1).'v\)\s/'
+    endif
+endfunction " }}}
+nnoremap <leader>i :call IndentGuides()<cr>

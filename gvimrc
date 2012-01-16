@@ -5,9 +5,10 @@ set guifont=Menlo:h14
 syntax enable
 "colorscheme macvim
 "colorscheme zenburn
-colorscheme xoria256
+"colorscheme xoria256
 "colorscheme solarized
 "colorscheme ir_black
+colorscheme molokai
 
 autocmd bufwritepost .gvimrc source $MYVIMRC
 
@@ -18,7 +19,8 @@ if has("gui_macvim")
     map <D-T> :tabe 
     set fuoptions=maxhorz,maxvert
     " Command-Return for fullscreen
-    macmenu Window.Toggle\ Full\ Screen\ Mode key=<D-CR>
+    "macmenu Window.Toggle\ Full\ Screen\ Mode key=<D-CR>
+    macmenu Window.Toggle\ Full\ Screen\ Mode key=<nop>
     " Command-Shift-F for Ack
     map <D-F> :Ack<space>
     macmenu &Tools.Make key=<nop>
