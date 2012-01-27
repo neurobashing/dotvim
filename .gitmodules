@@ -98,3 +98,6 @@
 	path = bundle/pyflakes
 	url = https://github.com/vim-scripts/pyflakes.git
 	ignore = dirty
+[submodule "bundle/YankRing.vim"]
+	path = bundle/YankRing.vim
+	url = https://github.com/vim-scripts/YankRing.vim.git
