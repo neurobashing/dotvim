@@ -176,3 +176,5 @@ function! IndentGuides() " {{{
     endif
 endfunction " }}}
 nnoremap <leader>i :call IndentGuides()<cr>
+
+let g:yankring_history_dir = '$VIM'
