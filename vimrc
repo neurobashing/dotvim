@@ -42,7 +42,8 @@ nnoremap <leader><space> :noh<cr>
 nnoremap / /\v
 vnoremap / /\v
 
-set statusline=%F\ %m\ %r%(\ %h\ %)%y\ line\ %l\ col\ %v\ %p%%\ %L\ lines\ \ %{fugitive#statusline()}
+"set statusline=%F\ %m\ %r%(\ %h\ %)%y\ line\ %l\ col\ %v\ %p%%\ %L\ lines\ \ %{fugitive#statusline()}
+set laststatus=2
 
 " 256 color mode brah
 " requires iTerm2 or some stupid SIMBL hack
