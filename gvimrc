@@ -9,6 +9,7 @@ syntax enable
 "colorscheme solarized
 "colorscheme ir_black
 colorscheme molokai
+hi IndentGuides guibg=#373737
 
 autocmd bufwritepost .gvimrc source $MYVIMRC
 

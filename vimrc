@@ -50,6 +50,7 @@ set laststatus=2
 set t_Co=256
 set background=dark
 colorscheme molokai
+hi IndentGuides guibg=#373737
 
 autocmd bufwritepost .vimrc source $MYVIMRC
 
@@ -164,10 +165,9 @@ nnoremap N Nzzzv
 inoremap <c-a> <esc>I
 inoremap <c-e> <esc>A
 
-hi IndentGuides guibg=#5f5f5f
-hi IndentGuides guifg=#5f5f5f
+" derp 5f5f5f
 let g:indentguides_state = 0
-function! IndentGuides() " {{{
+function! IndentGuides()
     if g:indentguides_state
         let g:indentguides_state = 0
         2match None
@@ -175,7 +175,7 @@ function! IndentGuides() " {{{
         let g:indentguides_state = 1
         execute '2match IndentGuides /\%(\_^\s*\)\@<=\%(\%'.(0*&sw+1).'v\|\%'.(1*&sw+1).'v\|\%'.(2*&sw+1).'v\|\%'.(3*&sw+1).'v\|\%'.(4*&sw+1).'v\|\%'.(5*&sw+1).'v\|\%'.(6*&sw+1).'v\|\%'.(7*&sw+1).'v\)\s/'
     endif
-endfunction " }}}
+endfunction 
 nnoremap <leader>i :call IndentGuides()<cr>
 
 let g:yankring_history_dir = '$VIM'
