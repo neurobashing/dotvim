@@ -74,10 +74,6 @@
 	path = bundle/align
 	url = https://github.com/tsaleh/vim-align.git
         ignore = dirty
-[submodule "bundle/Conque-Shell"]
-	path = bundle/Conque-Shell
-	url = https://github.com/vim-scripts/Conque-Shell.git
-        ignore = dirty
 [submodule "bundle/vim-session"]
 	path = bundle/vim-session
 	url = https://github.com/xolox/vim-session.git
