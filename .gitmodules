@@ -101,3 +101,4 @@
 [submodule "bundle/Syntastic"]
 	path = bundle/Syntastic
 	url = https://github.com/vim-scripts/Syntastic.git
+	ignore = dirty
