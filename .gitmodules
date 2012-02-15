@@ -90,10 +90,6 @@
 	path = bundle/Jinja
 	url = https://github.com/vim-scripts/Jinja.git
 	ignore = dirty
-[submodule "bundle/pyflakes"]
-	path = bundle/pyflakes
-	url = https://github.com/vim-scripts/pyflakes.git
-	ignore = dirty
 [submodule "bundle/vim-powerline"]
 	path = bundle/vim-powerline
 	url = https://github.com/Lokaltog/vim-powerline.git
@@ -101,4 +97,8 @@
 [submodule "bundle/YankRing.vim"]
 	path = bundle/YankRing.vim
 	url = https://github.com/vim-scripts/YankRing.vim.git
+	ignore = dirty
+[submodule "bundle/Syntastic"]
+	path = bundle/Syntastic
+	url = https://github.com/vim-scripts/Syntastic.git
 	ignore = dirty
