@@ -9,6 +9,6 @@ else:
 
 subprocess.call(['git','config','--remove-section',"submodule.bundle/"+modulename])
 subprocess.call(['git','config','-f','.gitmodules','--remove-section',"submodule.bundle/"+modulename])
-subprocess.call(["git","rm","--cached","bundle/"+modulename])
+subprocess.call(["git","rm","-r","bundle/"+modulename])
 subprocess.call(["git","add","."])
 subprocess.call(["git","commit","-m","removed module "+modulename])
