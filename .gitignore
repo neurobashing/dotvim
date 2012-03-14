@@ -4,3 +4,4 @@ view/*
 .VimballRecord
 bundle/snipmate-snippets
 sessions/
+tmp/

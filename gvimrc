@@ -1,11 +1,11 @@
 "set guifont=Inconsolata:h14
-set guifont=Menlo:h13
-"set guioptions-=T
+set guifont=Menlo:h14
+set guioptions-=T
 
 syntax enable
 "colorscheme macvim
-"colorscheme zenburn
-colorscheme xoria256
+colorscheme zenburn
+#colorscheme xoria256
 "colorscheme solarized
 "colorscheme ir_black
 "colorscheme molokai
