@@ -47,10 +47,11 @@ set laststatus=2
 
 " 256 color mode brah
 " requires iTerm2 or some stupid SIMBL hack
-set t_Co=256
-set background=dark
-colorscheme molokai
-hi IndentGuides guibg=#373737
+" or maybe lion's terminal? no one's sure.
+"set t_Co=256
+"set background=dark
+"colorscheme molokai
+"hi IndentGuides guibg=#373737
 
 autocmd bufwritepost .vimrc source $MYVIMRC
 
