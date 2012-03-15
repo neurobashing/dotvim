@@ -178,5 +178,5 @@ function! IndentGuides()
 endfunction
 nnoremap <leader>i :call IndentGuides()<cr>
 
-let g:yankring_history_dir = '$HOME/tmp'
+let g:yankring_history_dir = '$HOME/.vim/tmp'
 let g:yankring_history_file = 'yankring_history_file'
