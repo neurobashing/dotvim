@@ -44,6 +44,7 @@ vnoremap / /\v
 
 "set statusline=%F\ %m\ %r%(\ %h\ %)%y\ line\ %l\ col\ %v\ %p%%\ %L\ lines\ \ %{fugitive#statusline()}
 set laststatus=2
+let g:Powerline_symbols = 'fancy'
 
 " 256 color mode brah
 " requires iTerm2 or some stupid SIMBL hack
@@ -182,3 +183,6 @@ nnoremap <leader>i :call IndentGuides()<cr>
 let g:yankring_history_dir = '$HOME/.vim/tmp'
 let g:yankring_history_file = 'yankring_history_file'
 
+nnoremap <leader>ft mZggVG=`Zzz
+nnoremap H 0
+nnoremap L $
