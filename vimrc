@@ -52,7 +52,7 @@ set laststatus=2
 " or maybe lion's terminal? no one's sure.
 set t_Co=256
 set background=dark
-colorscheme myjellybeans
+colorscheme jellybeans
 "hi IndentGuides guibg=#373737
 
 autocmd bufwritepost .vimrc source $MYVIMRC
