@@ -1,8 +1,9 @@
+filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-filetype on
-filetype plugin on
+"filetype on
+"filetype plugin on
 filetype plugin indent on
 
 set nocp
@@ -42,15 +43,15 @@ nnoremap <leader><space> :noh<cr>
 nnoremap / /\v
 vnoremap / /\v
 
-"set statusline=%F\ %m\ %r%(\ %h\ %)%y\ line\ %l\ col\ %v\ %p%%\ %L\ lines\ \ %{fugitive#statusline()}
+set statusline=%F\ %m\ %r%(\ %h\ %)%y\ line\ %l\ col\ %v\ %p%%\ %L\ lines\ \ %{fugitive#statusline()}
 set laststatus=2
-let g:Powerline_symbols = 'fancy'
+"let g:Powerline_symbols = 'fancy'
 
 " 256 color mode brah
 " requires iTerm2 or some stupid SIMBL hack
 " or maybe lion's terminal? no one's sure.
-"set t_Co=256
-"set background=dark
+set t_Co=256
+set background=dark
 "colorscheme molokai
 "hi IndentGuides guibg=#373737
 
