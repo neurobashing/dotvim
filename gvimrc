@@ -1,12 +1,12 @@
 "set guifont=Inconsolata:h14
-"set guifont=Menlo:h14
-set guifont=Menlo\ Regular\ for\ Powerline:h14
+set guifont=Menlo:h14
+"set guifont=Menlo\ Regular\ for\ Powerline:h14
 set guioptions-=T
 
 set t_Co=256
 syntax enable
 set background=light
-colorscheme jellybeans
+colorscheme myjellybeans
 "colorscheme macvim
 "colorscheme zenburn
 "colorscheme xoria256
@@ -21,7 +21,7 @@ if has("gui_macvim")
     macmenu &File.New\ Tab key=<nop>
     map <D-t> :PeepOpen<CR>
     macmenu &File.Open\ Tab\.\.\. key=<nop>
-    map <D-T> :tabe 
+    map <D-T> :tabe
     set fuoptions=maxhorz,maxvert
     " Command-Return for fullscreen
     "macmenu Window.Toggle\ Full\ Screen\ Mode key=<D-CR>
