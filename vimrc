@@ -1,6 +1,7 @@
 filetype off
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+call pathogen#infect()
+"call pathogen#runtime_append_all_bundles()
+"call pathogen#helptags()
 
 "filetype on
 "filetype plugin on
@@ -43,9 +44,12 @@ nnoremap <leader><space> :noh<cr>
 nnoremap / /\v
 vnoremap / /\v
 
-set statusline=%F\ %m\ %r%(\ %h\ %)%y\ line\ %l\ col\ %v\ %p%%\ %L\ lines\ \ %{fugitive#statusline()}
+set statusline=%F " file name
+set statusline+=\ %h " help type
+set statusline+=\ %m " modified?
+set statusline+=\ %r%(\ %h\ %)%y " read only (helptype) filetype
+set statusline+=\ col\ %v\ line\ %l\ /\ %L\ lines\ %(%p%%%)
 set laststatus=2
-"let g:Powerline_symbols = 'fancy'
 
 " 256 color mode brah
 " requires iTerm2 or some stupid SIMBL hack

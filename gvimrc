@@ -13,7 +13,11 @@ colorscheme jellybeans
 "colorscheme solarized
 "colorscheme ir_black
 "colorscheme molokai
-hi IndentGuides guibg=#373737
+" this sucks.
+hi IndentGuides guibg=#FFFFFF
+"hi IndentGuides guibg=#373737
+
+set statusline+=\ %{fugitive#statusline()}
 
 autocmd bufwritepost .gvimrc source $MYVIMRC
 
