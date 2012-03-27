@@ -27,6 +27,11 @@ if has("gui_macvim")
     map <D-F> :Ack<space>
     macmenu &Tools.Make key=<nop>
     map <Leader>tb :TagbarToggle<CR>
+
+    macmenu Window.Select\ Next\ Tab key=<nop>
+    macmenu Window.Select\ Previous\ Tab key=<nop>
+    map <D-{> :bp<cr>
+    map <D-}> :bn<cr>
 endif
 
 " let's fiddle with the toolbar.
