@@ -82,10 +82,6 @@
 	path = bundle/TwitVim
 	url = https://github.com/vim-scripts/TwitVim.git
 	ignore = dirty
-[submodule "bundle/dbext.vim"]
-	path = bundle/dbext.vim
-	url = https://github.com/vim-scripts/dbext.vim.git
-	ignore = dirty
 [submodule "bundle/Jinja"]
 	path = bundle/Jinja
 	url = https://github.com/vim-scripts/Jinja.git
