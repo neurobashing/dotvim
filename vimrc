@@ -85,8 +85,8 @@ nmap <Leader>ps :!php -l %<CR>
 let g:snips_author="J. Gregg Thomason <gregg.thomason@asti-usa.com>"
 
 " retain view state when switching windows
-autocmd BufWinLeave *.* mkview
-autocmd BufWinEnter *.* silent loadview
+"autocmd BufWinLeave *.* mkview
+"autocmd BufWinEnter *.* silent loadview
 
 "" NERDTree configuration
 let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
