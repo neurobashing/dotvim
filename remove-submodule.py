@@ -7,7 +7,7 @@ if len(sys.argv) < 2:
 else:
   modulename = sys.argv[1]
 
-subprocess.call(["git","rm","-r","bundle/"+modulename])
+subprocess.call(["git","rm","-rf","bundle/"+modulename])
 subprocess.call(['git','config','--remove-section',"submodule.bundle/"+modulename])
 subprocess.call(['git','config','-f','.gitmodules','--remove-section',"submodule.bundle/"+modulename])
 subprocess.call(["git","add","."])
