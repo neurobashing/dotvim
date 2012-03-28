@@ -46,10 +46,6 @@
 	path = bundle/vimwiki
 	url = https://github.com/vim-scripts/vimwiki.git
         ignore = dirty
-[submodule "bundle/TaskList"]
-	path = bundle/TaskList
-	url = https://github.com/vim-scripts/TaskList.vim.git
-        ignore = dirty
 [submodule "bundle/SudoEdit"]
 	path = bundle/SudoEdit
 	url = https://github.com/chrisbra/SudoEdit.vim.git
