@@ -44,11 +44,11 @@ nnoremap <leader><space> :noh<cr>
 nnoremap / /\v
 vnoremap / /\v
 
-set statusline=%F " file name
-set statusline+=\ %h " help type
-set statusline+=\ %m " modified?
-set statusline+=\ %r%(\ %h\ %)%y " read only (helptype) filetype
-set statusline+=\ col\ %v\ line\ %l\ /\ %L\ lines\ %(%p%%%)
+"set statusline=%F " file name
+"set statusline+=\ %h " help type
+"set statusline+=\ %m " modified?
+"set statusline+=\ %r%(\ %h\ %)%y " read only (helptype) filetype
+"set statusline+=\ col\ %v\ line\ %l\ /\ %L\ lines\ %(%p%%%)
 set laststatus=2
 
 " 256 color mode brah
@@ -58,6 +58,8 @@ set t_Co=256
 set background=dark
 colorscheme jellybeans
 "hi IndentGuides guibg=#373737
+let g:Powerline_symbols = 'fancy'
+" or maybe unicode?
 
 autocmd bufwritepost .vimrc source $MYVIMRC
 

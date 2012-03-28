@@ -1,6 +1,6 @@
 "set guifont=Inconsolata:h14
-set guifont=Menlo:h14
-"set guifont=Menlo\ Regular\ for\ Powerline:h14
+"set guifont=Menlo:h14
+set guifont=Menlo\ Regular\ for\ Powerline:h14
 set guioptions-=T
 
 set t_Co=256
@@ -17,7 +17,7 @@ colorscheme jellybeans
 hi IndentGuides guibg=#FFFFFF
 "hi IndentGuides guibg=#373737
 
-set statusline+=\ %{fugitive#statusline()}
+"set statusline+=\ %{fugitive#statusline()}
 
 autocmd bufwritepost .gvimrc source $MYVIMRC
 
