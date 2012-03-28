@@ -58,7 +58,7 @@ set t_Co=256
 set background=dark
 colorscheme jellybeans
 "hi IndentGuides guibg=#373737
-let g:Powerline_symbols = 'compatible'
+let g:Powerline_symbols = 'fancy'
 " or maybe unicode?
 
 autocmd bufwritepost .vimrc source $MYVIMRC
