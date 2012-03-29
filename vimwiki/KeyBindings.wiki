@@ -10,10 +10,6 @@ Twitter
 :{count}FriendsTwitter show twitter, for optionally, page {count} of feed.
 ,g open URL at cursor
 
-TaskList
-========
-,lt show TODO/FIXMEs in buffer for current buffer
-
 NERDTree
 ========
 ,nt open/close NERDTree

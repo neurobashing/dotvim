@@ -116,7 +116,7 @@ set shell=/bin/bash
 let g:tagbar_ctags_bin="/usr/local/bin/ctags"
 
 " show tasklist for current file
-map <leader>lt <Plug>TaskList
+"map <leader>lt <Plug>TaskList
 
 command W w
 command Wb w|bw
