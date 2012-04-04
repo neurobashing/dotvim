@@ -39,6 +39,9 @@ if has("gui_macvim")
     macmenu Window.Select\ Previous\ Tab key=<nop>
     map <D-{> :bp<cr>
     map <D-}> :bn<cr>
+
+    macmenu File.Close key=<nop>
+    map <D-w> :bw<cr>
 endif
 
 " let's fiddle with the toolbar.
