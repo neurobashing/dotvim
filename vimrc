@@ -139,7 +139,7 @@ set wildignore+=*.pyc                            " Python byte code
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 
 let twitvim_browser_cmd="open"
-nnoremap <F8> :FriendsTwitter<cr>
+nnoremap <F8> :FriendsTwitter<cr><esc><C-w>k:only<cr>
 nnoremap <F5> :RefreshTwitter<cr>
 nnoremap <S-F8> :UserTwitter<cr>
 nnoremap <A-F8> :RepliesTwitter<cr>
@@ -193,3 +193,6 @@ let g:yankring_history_file = 'yankring_history_file'
 nnoremap <leader>ft mZggVG=`Zzz
 nnoremap H 0
 nnoremap L $
+
+" map leader-O to "make the current window the only window
+nnoremap <leader>O :only<cr>

@@ -74,10 +74,6 @@
 	path = bundle/Jinja
 	url = https://github.com/vim-scripts/Jinja.git
 	ignore = dirty
-[submodule "bundle/YankRing.vim"]
-	path = bundle/YankRing.vim
-	url = https://github.com/vim-scripts/YankRing.vim.git
-	ignore = dirty
 [submodule "bundle/Syntastic"]
 	path = bundle/Syntastic
 	url = https://github.com/vim-scripts/Syntastic.git
