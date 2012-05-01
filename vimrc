@@ -89,9 +89,10 @@ let g:snips_author="J. Gregg Thomason <gregg.thomason@asti-usa.com>"
 "autocmd BufWinEnter *.* silent loadview
 
 "" NERDTree configuration
-let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
+let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$', '\.bbprojectd$']
 "map <F2> :NERDTreeToggle<CR>
 map <Leader>nt :NERDTreeToggle<CR>
+autocmd vimenter * NERDTree
 
 " Remember last location in file
 if has("autocmd")
