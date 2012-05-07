@@ -79,9 +79,6 @@ let php_htmlInStrings=1
 vmap <D-[> <gv
 vmap <D-]> >gv
 
-" syntax check current file
-nmap <Leader>ps :!php -l %<CR>
-
 let g:snips_author="J. Gregg Thomason <gregg.thomason@asti-usa.com>"
 
 " retain view state when switching windows
@@ -90,9 +87,8 @@ let g:snips_author="J. Gregg Thomason <gregg.thomason@asti-usa.com>"
 
 "" NERDTree configuration
 let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$', '\.bbprojectd$']
-"map <F2> :NERDTreeToggle<CR>
 map <Leader>nt :NERDTreeToggle<CR>
-autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
 
 " Remember last location in file
 if has("autocmd")
@@ -115,6 +111,7 @@ let g:vimwiki_list = [{'path': '~/.vim/vimwiki/', 'path_html': '~/Sites/vimwiki/
 set shell=/bin/bash
 
 let g:tagbar_ctags_bin="/usr/local/bin/ctags"
+nnoremap <D-Y> :TagbarToggle<cr>
 
 " show tasklist for current file
 "map <leader>lt <Plug>TaskList
@@ -188,12 +185,19 @@ function! IndentGuides()
 endfunction
 nnoremap <leader>i :call IndentGuides()<cr>
 
-let g:yankring_history_dir = '$HOME/.vim/tmp'
-let g:yankring_history_file = 'yankring_history_file'
-
 nnoremap <leader>ft mZggVG=`Zzz
 nnoremap H 0
 nnoremap L $
 
 " map leader-O to "make the current window the only window
 nnoremap <leader>O :only<cr>
+
+" stolen from Janus
+if has("gui_running")
+  if has("autocmd")
+    " Automatically resize splits when resizing MacVim window
+    autocmd VimResized * wincmd =
+  endif
+endif
+set backupdir=~/.vim/_backup/
+set directory=~/.vim/_tmp/

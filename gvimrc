@@ -22,9 +22,9 @@ hi IndentGuides guibg=#FFFFFF
 autocmd bufwritepost .gvimrc source $MYVIMRC
 
 if has("gui_macvim")
-    macmenu &File.New\ Tab key=<nop>
-    map <D-t> :PeepOpen<CR>
-    macmenu &File.Open\ Tab\.\.\. key=<nop>
+    "macmenu &File.New\ Tab key=<nop>
+    "map <D-t> :PeepOpen<CR>
+    "macmenu &File.Open\ Tab\.\.\. key=<nop>
     map <D-T> :tabe
     set fuoptions=maxhorz,maxvert
     " Command-Return for fullscreen
@@ -35,13 +35,13 @@ if has("gui_macvim")
     macmenu &Tools.Make key=<nop>
     map <Leader>tb :TagbarToggle<CR>
 
-    macmenu Window.Select\ Next\ Tab key=<nop>
-    macmenu Window.Select\ Previous\ Tab key=<nop>
-    map <D-{> :bp<cr>
-    map <D-}> :bn<cr>
+    "macmenu Window.Select\ Next\ Tab key=<nop>
+    "macmenu Window.Select\ Previous\ Tab key=<nop>
+    "map <D-{> :bp<cr>
+    "map <D-}> :bn<cr>
 
-    macmenu File.Close key=<nop>
-    map <D-w> :bw<cr>
+    "macmenu File.Close key=<nop>
+    "map <D-w> :bw<cr>
 endif
 
 " let's fiddle with the toolbar.
@@ -56,11 +56,11 @@ tmenu ToolBar.VimWiki Open wiki Index
 amenu ToolBar.VimWiki :VimwikiIndex<CR>
 
 " Show syntax highlighting groups for word under cursor
-nmap <C-S-P> :call <SID>SynStack()<CR>
-function! <SID>SynStack()
-  if !exists("*synstack")
-    return
-  endif
-  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
-endfunc
+"nmap <C-S-P> :call <SID>SynStack()<CR>
+"function! <SID>SynStack()
+  "if !exists("*synstack")
+    "return
+  "endif
+  "echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+"endfunc
 
