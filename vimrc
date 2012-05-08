@@ -201,3 +201,6 @@ if has("gui_running")
 endif
 set backupdir=~/.vim/_backup/
 set directory=~/.vim/_tmp/
+
+" attempting to get conque working. AGAIN.
+let g:ConqueTerm_PyVersion = 2
