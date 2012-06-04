@@ -1,7 +1,7 @@
 "set guifont=Inconsolata:h14
 "set guifont=Menlo:h14
 set guifont=Menlo\ Regular\ for\ Powerline:h14
-set guioptions-=T
+"set guioptions-=T
 
 set t_Co=256
 syntax enable
@@ -54,6 +54,8 @@ amenu ToolBar.TagBar :TagbarToggle<CR>
 
 tmenu ToolBar.VimWiki Open wiki Index
 amenu ToolBar.VimWiki :VimwikiIndex<CR>
+
+" Add git thingees here
 
 " Show syntax highlighting groups for word under cursor
 "nmap <C-S-P> :call <SID>SynStack()<CR>
