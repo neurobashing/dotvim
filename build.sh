@@ -1,6 +1,7 @@
 #!/bin/sh
 
 cd ~/tmp
+rm -rf macvim
 git clone git://github.com/b4winckler/macvim.git
 cd macvim/src
 ./configure --with-features=huge \

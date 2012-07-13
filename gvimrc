@@ -1,7 +1,7 @@
 "set guifont=Inconsolata:h14
 "set guifont=Menlo:h14
 set guifont=Menlo\ Regular\ for\ Powerline:h14
-"set guioptions-=T
+set guioptions-=T
 
 set t_Co=256
 syntax enable
