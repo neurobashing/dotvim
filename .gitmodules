@@ -86,10 +86,6 @@
 	path = bundle/JavaScript-Indent
 	url = https://github.com/vim-scripts/JavaScript-Indent.git
 	ignore = dirty
-[submodule "bundle/TwitVim"]
-	path = bundle/TwitVim
-	url = https://github.com/vim-scripts/TwitVim.git
-	ignore = dirty
 [submodule "bundle/clam.vim"]
 	path = bundle/clam.vim
 	url = https://github.com/sjl/clam.vim.git
