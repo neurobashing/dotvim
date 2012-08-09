@@ -1,13 +1,14 @@
 "set guifont=Inconsolata:h14
 "set guifont=Menlo:h14
-set guifont=Menlo\ Regular\ for\ Powerline:h14
+"set guifont=Menlo\ Regular\ for\ Powerline:h14
+set guifont=Ubuntu\ Mono:h16
 set guioptions-=T
 
 set t_Co=256
 syntax enable
 set background=light
-colorscheme jellybeansg
-"colorscheme macvim
+"colorscheme jellybeansg
+colorscheme macvim
 "colorscheme zenburn
 "colorscheme xoria256
 "colorscheme solarized

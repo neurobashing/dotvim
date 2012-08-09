@@ -59,7 +59,10 @@ set background=dark
 colorscheme jellybeans
 "hi IndentGuides guibg=#373737
 let g:Powerline_symbols = 'fancy'
+"let g:Powerline_symbols = 'unicode'
 " or maybe unicode?
+"let g:Powerline_theme = 'skwp'
+"let g:Powerline_colorscheme = 'skwp'
 
 autocmd bufwritepost .vimrc source $MYVIMRC
 
@@ -203,4 +206,4 @@ set backupdir=~/.vim/_backup/
 set directory=~/.vim/_tmp/
 
 " attempting to get conque working. AGAIN.
-let g:ConqueTerm_PyVersion = 2
+" let g:ConqueTerm_PyVersion = 2
