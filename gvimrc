@@ -6,7 +6,7 @@ set guioptions-=T
 
 set t_Co=256
 syntax enable
-set background=light
+set background=dark
 "colorscheme jellybeansg
 colorscheme macvim
 "colorscheme zenburn
