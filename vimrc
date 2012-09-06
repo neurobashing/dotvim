@@ -176,18 +176,19 @@ inoremap <c-a> <esc>I
 inoremap <c-e> <esc>A
 
 " derp 5f5f5f
-let g:indentguides_state = 0
-function! IndentGuides()
-    if g:indentguides_state
-        let g:indentguides_state = 0
-        2match None
-    else
-        let g:indentguides_state = 1
-        execute '2match IndentGuides /\%(\_^\s*\)\@<=\%(\%'.(0*&sw+1).'v\|\%'.(1*&sw+1).'v\|\%'.(2*&sw+1).'v\|\%'.(3*&sw+1).'v\|\%'.(4*&sw+1).'v\|\%'.(5*&sw+1).'v\|\%'.(6*&sw+1).'v\|\%'.(7*&sw+1).'v\)\s/'
-    endif
-endfunction
-nnoremap <leader>i :call IndentGuides()<cr>
+" let g:indentguides_state = 0
+" function! IndentGuides()
+"     if g:indentguides_state
+"         let g:indentguides_state = 0
+"         2match None
+"     else
+"         let g:indentguides_state = 1
+"         execute '2match IndentGuides /\%(\_^\s*\)\@<=\%(\%'.(0*&sw+1).'v\|\%'.(1*&sw+1).'v\|\%'.(2*&sw+1).'v\|\%'.(3*&sw+1).'v\|\%'.(4*&sw+1).'v\|\%'.(5*&sw+1).'v\|\%'.(6*&sw+1).'v\|\%'.(7*&sw+1).'v\)\s/'
+"     endif
+" endfunction
+" nnoremap <leader>i :call IndentGuides()<cr>
 
+" format current buffer
 nnoremap <leader>ft mZggVG=`Zzz
 nnoremap H 0
 nnoremap L $
