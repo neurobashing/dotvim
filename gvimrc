@@ -1,12 +1,13 @@
 "set guifont=Inconsolata:h14
 "set guifont=Menlo:h14
-set guifont=Menlo\ Regular\ for\ Powerline:h14
-"set guifont=Ubuntu\ Mono:h16
-set guioptions-=T
+"set guifont=Menlo\ Regular\ for\ Powerline:h14
+set guifont=Ubuntu\ Mono:h16
+" disable the toolbar
+" set guioptions-=T
 
 set t_Co=256
 syntax enable
-set background=dark
+set background=light
 "colorscheme jellybeansg
 colorscheme macvim
 "colorscheme zenburn
