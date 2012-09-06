@@ -5,3 +5,5 @@ view/*
 bundle/snipmate-snippets
 sessions/
 tmp/
+_tmp/
+_backup

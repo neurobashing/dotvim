@@ -7,9 +7,12 @@ set guifont=Ubuntu\ Mono:h16
 
 set t_Co=256
 syntax enable
-set background=light
-"colorscheme jellybeansg
-colorscheme macvim
+"set background=light
+"colorscheme macvim
+
+set background=dark
+colorscheme jellybeansg
+
 "colorscheme zenburn
 "colorscheme xoria256
 "colorscheme solarized
