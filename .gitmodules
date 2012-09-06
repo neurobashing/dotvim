@@ -98,3 +98,7 @@
 	path = bundle/vim-indent-guides
 	url = https://github.com/nathanaelkane/vim-indent-guides.git
 	ignore = dirty
+[submodule "bundle/itchy.vim"]
+	path = bundle/itchy.vim
+	url = https://github.com/programble/itchy.vim.git
+	ignore = dirty
