@@ -206,5 +206,8 @@ endif
 set backupdir=~/.vim/_backup/
 set directory=~/.vim/_tmp/
 
-" attempting to get conque working. AGAIN.
-" let g:ConqueTerm_PyVersion = 2
+function DashMan(search)
+    let searchterm=a:search
+    execute "!open dash://" . searchterm
+endfunction
+command! -nargs=1 Man call DashMan('<args>')

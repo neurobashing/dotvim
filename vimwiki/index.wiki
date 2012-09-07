@@ -4,3 +4,10 @@
     * HOWTO -- Reminders.
 
     * site repo:  svn co svn+ssh://cvs/usr/local/svndev/website
+
+= Weechat Commands =
+    * connect: /connect SERVERNAME
+    * /join #CHANNEL
+    * /part #CHANNEL
+    * close current channel buffer: /close 
+    * /msg PERSON
