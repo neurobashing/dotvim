@@ -102,3 +102,7 @@
 	path = bundle/itchy.vim
 	url = https://github.com/programble/itchy.vim.git
 	ignore = dirty
+[submodule "bundle/vim-jsbeautify"]
+	path = bundle/vim-jsbeautify
+	url = https://github.com/maksimr/vim-jsbeautify.git
+	ignore = dirty
