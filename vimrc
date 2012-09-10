@@ -213,13 +213,3 @@ function DashMan(search)
 endfunction
 command! -nargs=1 Man call DashMan('<f-args>')
 
-" js-beautify
-let g:jsbeautify = {'indent_size': 4, 'indent_char': ' '}
-" let g:htmlbeautify = {'indent_size': 4, 'indent_char': ' ', 'max_char': 78, 'brace_style': 'expand', 'unformatted': ['a', 'sub', 'sup', 'b', 'i', 'u']}
-" let g:cssbeautify = {'indent_size': 4, 'indent_char': ' '}
-let g:jsbeautify_engine = "node"
-let s:rootDir = fnamemodify(expand("<sfile>"), ":h")
-let g:jsbeautify_file = fnameescape(s:rootDir."/bundle/js-beautify/beautify.js")
-" let g:htmlbeautify_file = fnameescape(s:rootDir."/bundle/js-beautify/beautify-html.js")
-" let g:cssbeautify_file = fnameescape(s:rootDir."/bundle/js-beautify/beautify-css.js")
-
