@@ -125,6 +125,11 @@ command Wb w|bw
 autocmd BufNewFile,BufRead *.py setlocal textwidth=79
 au FileType python setlocal omnifunc=pythoncomplete#Complete
 
+autocmd BufNewFile,BufRead *.js setlocal textwidth=79 ts=2 sts=2 sw=2
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+
 " markdown yo
 nnoremap <leader>M :silent !open -a Marked.app '%:p'<cr>
 
