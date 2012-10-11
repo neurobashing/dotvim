@@ -106,3 +106,7 @@
 	path = bundle/supertab
 	url = https://github.com/ervandew/supertab.git
 	ignore = dirty
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = https://github.com/godlygeek/tabular.git
+	ignore = dirty

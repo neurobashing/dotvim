@@ -89,9 +89,21 @@ let g:snips_author="J. Gregg Thomason <gregg.thomason@asti-usa.com>"
 "autocmd BufWinEnter *.* silent loadview
 
 "" NERDTree configuration
-let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$', '\.bbprojectd$']
+let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$', '\.bbprojectd$', '\.komodotools', '\.swp$', '\.git', '\.hg', '\.svn']
 map <Leader>nt :NERDTreeToggle<CR>
 "autocmd vimenter * NERDTree
+" This is new stuff.
+" 1 means chdir to whatever nerd tree is started in, 2 means chdir as you
+" navigate
+let NERDTreeChDirMode=0
+" close after opening a file.
+let NERDTreeQuitOnOpen=1
+" single click will open directory nodes, while a double
+" click will still be required for file nodes. 3 for anything-single-click
+let NERDTreeMouseMode=2
+let NERDTreeShowHidden=1
+let NERDTreeKeepTreeInNewTab=1
+let g:nerdtree_tabs_open_on_gui_startup=0
 
 " Remember last location in file
 if has("autocmd")
