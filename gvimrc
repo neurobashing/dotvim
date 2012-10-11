@@ -1,7 +1,8 @@
 "set guifont=Inconsolata:h14
 "set guifont=Menlo:h14
-set guifont=Menlo\ Regular\ for\ Powerline:h14
-" set guifont=Ubuntu\ Mono:h16
+"set guifont=Menlo\ Regular\ for\ Powerline:h14
+set guifont=Ubuntu\ Mono:h16
+ "set guifont=Source\ Code\ Pro:h14
 " Disable toolbar.
 set guioptions-=T
 

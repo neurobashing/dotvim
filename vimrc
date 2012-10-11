@@ -58,7 +58,7 @@ set t_Co=256
 set background=dark
 colorscheme jellybeans
 "hi IndentGuides guibg=#373737
-let g:Powerline_symbols = 'fancy'
+"let g:Powerline_symbols = 'fancy'
 "let g:Powerline_symbols = 'unicode'
 " or maybe unicode?
 "let g:Powerline_theme = 'skwp'
