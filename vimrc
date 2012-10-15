@@ -25,7 +25,7 @@ set listchars=tab:▸\ ,eol:¬
 set linebreak
 set showbreak=\ …\
 set scrolloff=3
-set foldmethod=indent
+"set foldmethod=indent
 set showcmd " see commands as you type them
 
 " here's some new stuff I'm trying out
