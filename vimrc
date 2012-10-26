@@ -230,3 +230,5 @@ function DashMan(search)
 endfunction
 command! -nargs=1 Man call DashMan('<f-args>')
 
+let vimpager_use_gvim = 1
+let vimpager_scrolloff = 0
