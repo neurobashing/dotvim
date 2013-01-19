@@ -58,10 +58,6 @@
 	path = bundle/align
 	url = https://github.com/tsaleh/vim-align.git
         ignore = dirty
-[submodule "bundle/Jinja"]
-	path = bundle/Jinja
-	url = https://github.com/vim-scripts/Jinja.git
-	ignore = dirty
 [submodule "bundle/Syntastic"]
 	path = bundle/Syntastic
 	url = https://github.com/vim-scripts/Syntastic.git
