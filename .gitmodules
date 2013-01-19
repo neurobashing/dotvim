@@ -38,10 +38,6 @@
 	path = bundle/nerdtree
 	url = https://github.com/wycats/nerdtree.git
         ignore = dirty
-[submodule "bundle/SudoEdit"]
-	path = bundle/SudoEdit
-	url = https://github.com/chrisbra/SudoEdit.vim.git
-        ignore = dirty
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
