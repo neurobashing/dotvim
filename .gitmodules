@@ -38,10 +38,6 @@
 	path = bundle/nerdtree
 	url = https://github.com/wycats/nerdtree.git
         ignore = dirty
-[submodule "bundle/vimwiki"]
-	path = bundle/vimwiki
-	url = https://github.com/vim-scripts/vimwiki.git
-        ignore = dirty
 [submodule "bundle/SudoEdit"]
 	path = bundle/SudoEdit
 	url = https://github.com/chrisbra/SudoEdit.vim.git
