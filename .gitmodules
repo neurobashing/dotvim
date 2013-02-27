@@ -82,3 +82,7 @@
 	path = bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
 	ignore = dirty
+[submodule "bundle/vim-unimpaired"]
+	path = bundle/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
+	ignore = dirty
