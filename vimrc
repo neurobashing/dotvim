@@ -1,10 +1,6 @@
 filetype off
 call pathogen#infect()
-"call pathogen#runtime_append_all_bundles()
-"call pathogen#helptags()
 
-"filetype on
-"filetype plugin on
 filetype plugin indent on
 
 set nocp
@@ -28,12 +24,9 @@ set scrolloff=3
 "set foldmethod=indent
 set showcmd " see commands as you type them
 
-" here's some new stuff I'm trying out
-let mapleader = ","
 set ignorecase
 set smartcase
-" these two make searches case-insensitive UNLESS you search for a mixed case
-" word
+" these two make searches case-insensitive UNLESS you search for a mixed case word
 set gdefault " substitute globally by default, append g to invert
 " show matches, highlight results in real time
 set showmatch
@@ -44,25 +37,11 @@ nnoremap <leader><space> :noh<cr>
 nnoremap / /\v
 vnoremap / /\v
 
-"set statusline=%F " file name
-"set statusline+=\ %h " help type
-"set statusline+=\ %m " modified?
-"set statusline+=\ %r%(\ %h\ %)%y " read only (helptype) filetype
-"set statusline+=\ col\ %v\ line\ %l\ /\ %L\ lines\ %(%p%%%)
 set laststatus=2
 
-" 256 color mode brah
-" requires iTerm2 or some stupid SIMBL hack
-" or maybe lion's terminal? no one's sure.
 set t_Co=256
 set background=dark
 colorscheme jellybeans
-"hi IndentGuides guibg=#373737
-"let g:Powerline_symbols = 'fancy'
-"let g:Powerline_symbols = 'unicode'
-" or maybe unicode?
-"let g:Powerline_theme = 'skwp'
-"let g:Powerline_colorscheme = 'skwp'
 
 autocmd bufwritepost .vimrc source $MYVIMRC
 
@@ -84,15 +63,10 @@ vmap <D-]> >gv
 
 let g:snips_author="J. Gregg Thomason <gregg.thomason@asti-usa.com>"
 
-" retain view state when switching windows
-"autocmd BufWinLeave *.* mkview
-"autocmd BufWinEnter *.* silent loadview
-
 "" NERDTree configuration
 let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$', '\.bbprojectd$', '\.komodotools', '\.swp$', '\.git', '\.hg', '\.svn']
 map <Leader>nt :NERDTreeToggle<CR>
 "autocmd vimenter * NERDTree
-" This is new stuff.
 " 1 means chdir to whatever nerd tree is started in, 2 means chdir as you
 " navigate
 let NERDTreeChDirMode=0
@@ -114,22 +88,11 @@ endif
 au FileType make set noexpandtab
 au FileType snippet setlocal ts=8 sts=8 sw=8 noet
 
-" Command-/ to toggle comments
-map <D-/> <plug>NERDCommenterToggle<CR>
-imap <D-/> <Esc><plug>NERDCommenterToggle<CR>i
-
-" use a different vimwiki path
-" you can use more path/path_html {} pairs.
-let g:vimwiki_list = [{'path': '~/.vim/vimwiki/', 'path_html': '~/Sites/vimwiki/'}]
-
 " in theory this will fix fugitive problems
 set shell=/bin/bash
 
-let g:tagbar_ctags_bin="/usr/local/bin/ctags"
-nnoremap <D-Y> :TagbarToggle<cr>
-
-" show tasklist for current file
-"map <leader>lt <Plug>TaskList
+"let g:tagbar_ctags_bin="/usr/local/bin/ctags"
+"nnoremap <D-Y> :TagbarToggle<cr>
 
 command W w
 command Wb w|bw
@@ -156,17 +119,6 @@ set wildignore+=*.pyc                            " Python byte code
 " Highlight VCS conflict markers
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 
-let twitvim_browser_cmd="open"
-nnoremap <F8> :FriendsTwitter<cr><esc><C-w>k:only<cr>
-nnoremap <F5> :RefreshTwitter<cr>
-nnoremap <S-F8> :UserTwitter<cr>
-nnoremap <A-F8> :RepliesTwitter<cr>
-nnoremap <C-F8> :DMTwitter<cr>
-let twitvim_filter_enable = 1
-" remove getglue links
-let twitvim_filter_regex = '@GetGlue'
-let twitvim_count = 50
-
 " in theory, this will delete all empty buffers
 function! DeleteEmptyBuffers()
     let empty = []
@@ -192,20 +144,6 @@ nnoremap N Nzzzv
 inoremap <c-a> <esc>I
 inoremap <c-e> <esc>A
 
-" derp 5f5f5f
-" this has been replaced by the vim-indent-guides plugin.
-" let g:indentguides_state = 0
-" function! IndentGuides()
-"     if g:indentguides_state
-"         let g:indentguides_state = 0
-"         2match None
-"     else
-"         let g:indentguides_state = 1
-"         execute '2match IndentGuides /\%(\_^\s*\)\@<=\%(\%'.(0*&sw+1).'v\|\%'.(1*&sw+1).'v\|\%'.(2*&sw+1).'v\|\%'.(3*&sw+1).'v\|\%'.(4*&sw+1).'v\|\%'.(5*&sw+1).'v\|\%'.(6*&sw+1).'v\|\%'.(7*&sw+1).'v\)\s/'
-"     endif
-" endfunction
-" nnoremap <leader>i :call IndentGuides()<cr>
-
 " format current buffer
 nnoremap <leader>ft mZggVG=`Zzz
 nnoremap H 0
@@ -223,12 +161,6 @@ if has("gui_running")
 endif
 set backupdir=~/.vim/_backup/
 set directory=~/.vim/_tmp/
-
-function DashMan(search)
-    let searchterm=a:search
-    silent execute "!open dash://" . searchterm
-endfunction
-command! -nargs=1 Man call DashMan('<f-args>')
 
 let vimpager_use_gvim = 1
 let vimpager_scrolloff = 0
