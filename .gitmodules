@@ -54,10 +54,6 @@
 	path = bundle/vim-powerline
 	url = https://github.com/Lokaltog/vim-powerline.git
 	ignore = dirty
-[submodule "bundle/JavaScript-Indent"]
-	path = bundle/JavaScript-Indent
-	url = https://github.com/vim-scripts/JavaScript-Indent.git
-	ignore = dirty
 [submodule "bundle/ctrlp.vim"]
 	path = bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
